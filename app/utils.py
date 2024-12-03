@@ -1,4 +1,6 @@
-from app import db
+from unicodedata import category
+
+from app import db, app
 from sqlalchemy import func
 from app.models import Category, Book, Author, OrderDetail, Order
 
@@ -33,3 +35,28 @@ def inventory_stats(name=None):
         if name:
             b = b.filter(Book.name.contains(name))
         return b.all()
+
+
+
+def load_categories():
+    return Category.query.all()
+
+
+def load_books(cate_id=None, kw=None, page=1):
+    query = Book.query
+
+    if kw:
+        query = query.filter(Book.name.contains(kw))
+
+    if cate_id:
+        query = query.filter(Book.category_id == cate_id)
+
+    page_size = app.config['PAGE_SIZE']
+    start = (page - 1) * page_size
+    query = query.slice(start, start + page_size)
+
+    return query.all()
+
+
+def count_books():
+    return Book.query.count()

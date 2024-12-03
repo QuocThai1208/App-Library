@@ -132,121 +132,121 @@ if __name__ == '__main__':
         #     cate = Category(**c)
         #     db.session.add(cate)
         # db.session.commit()
-        authors = [{
-            'name' : 'Thích Nhất Hạnh'
-        }, {
-            'name' : 'Phạm Công Luận'
-        }, {
-            'name' : 'Tô Hoài'
-        }, {
-            'name' : 'Nguyễn Nhật Ánh'
-        }, {
-            'name' : 'Nguyễn Ngọc Tư'
-        }, {
-            'name' : 'Đỗ Hồng Ngọc'
-        }, {
-            'name' : 'Dương Thụy'
-        }, {
-            'name' : 'Anh Khang'
-        }, {
-            'name' : 'Keigo Higashino'
-        }, {
-            'name' : 'Dale Carnegie'
-        }]
-        for a in authors:
-            author = Author(**a)
-            db.session.add(author)
-        db.session.commit()
+        # authors = [{
+        #     'name' : 'Thích Nhất Hạnh'
+        # }, {
+        #     'name' : 'Phạm Công Luận'
+        # }, {
+        #     'name' : 'Tô Hoài'
+        # }, {
+        #     'name' : 'Nguyễn Nhật Ánh'
+        # }, {
+        #     'name' : 'Nguyễn Ngọc Tư'
+        # }, {
+        #     'name' : 'Đỗ Hồng Ngọc'
+        # }, {
+        #     'name' : 'Dương Thụy'
+        # }, {
+        #     'name' : 'Anh Khang'
+        # }, {
+        #     'name' : 'Keigo Higashino'
+        # }, {
+        #     'name' : 'Dale Carnegie'
+        # }]
+        # for a in authors:
+        #     author = Author(**a)
+        #     db.session.add(author)
+        # db.session.commit()
         books = [{
             'id': '0000000001',
             'name': 'Nghệ Thuật Thiết Lập Truyền Thông',
             'author_id': 1,
-            'year_model' : 2024,
-            'unit_price' : 105000,
-            'code' : '893200013511',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 7
+            'year_model': 2024,
+            'unit_price': 105000,
+            'code': '893200013511',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 7
         }, {
             'id': '0000000002',
             'name': 'Giới Bản Khất Sĩ Tân Tu - Nghi Thức Tụng Giới Nữ Khất Sĩ (Tái bản năm 2024)',
             'author_id': 1,
-            'year_model' : 2024,
-            'unit_price' : 125000,
-            'code' : '893200013504',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 3
+            'year_model': 2024,
+            'unit_price': 125000,
+            'code': '893200013504',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 3
         }, {
             'id': '0000000003',
             'name': 'Truyện Tranh Khoa Học Về Các Loài Côn Trùng - Lính Trinh Sát Dũng Cảm - Kiến Polyergus',
             'author_id': 11,
-            'year_model' : 2024,
-            'unit_price' : 58000,
-            'code' : '893521237025',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 13
+            'year_model': 2024,
+            'unit_price': 58000,
+            'code': '893521237025',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 13
         }, {
             'id': '0000000004',
             'name': 'Truyện Tranh Khoa Học Về Các Loài Côn Trùng - Lính Trinh Sát Dũng Cảm - Kiến Polyergusg',
             'author_id': 1,
-            'year_model' : 2024,
-            'unit_price' : 105000,
-            'code' : '893200013511',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 7
+            'year_model': 2024,
+            'unit_price': 105000,
+            'code': '893200013511',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 7
         }, {
             'id': '0000000005',
             'name': 'Kĩ Năng Ứng Xử Cho Bé - Ở Trường Mẫu Giáo',
             'author_id': 10,
-            'year_model' : 2024,
-            'unit_price' : 80000,
-            'code' : '893521031038',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 13
+            'year_model': 2024,
+            'unit_price': 80000,
+            'code': '893521031038',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 13
         }, {
             'id': '0000000006',
             'name': 'Ninja Rantaro - Tập 41',
             'author_id': 12,
-            'year_model' : 2024,
-            'unit_price' : 40000,
-            'code' : '893535261927',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 11
+            'year_model': 2024,
+            'unit_price': 40000,
+            'code': '893535261927',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 11
         }, {
             'id': '0000000007',
             'name': 'Vườn Thú Omagadoki - Tập 3',
             'author_id': 12,
-            'year_model' : 2024,
-            'unit_price' : 35000,
-            'code' : '893535261829',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 11
+            'year_model': 2024,
+            'unit_price': 35000,
+            'code': '893535261829',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 11
         }, {
             'id': '0000000008',
             'name': 'Làng Làng Phố Phố Hà Nội',
             'author_id': 5,
-            'year_model' : 2024,
-            'unit_price' : 180000,
-            'code' : '893523524253',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 14
+            'year_model': 2024,
+            'unit_price': 180000,
+            'code': '893523524253',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 14
         }, {
             'id': '0000000009',
             'name': 'Chuyện Cơm Hội An - Thức Ăn Và Cộng Đồng Ở Một Đô Thị Việt Nam',
             'author_id': '3',
-            'year_model' : 2024,
-            'unit_price' : 255000,
-            'code' : '893614420219',
-            'image' : '',
-            'units_in_stock' : 10,
-            'category_id' : 2
+            'year_model': 2024,
+            'unit_price': 255000,
+            'code': '893614420219',
+            'image': '',
+            'units_in_stock': 10,
+            'category_id': 2
         }
         ]
         for b in books:
